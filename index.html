@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 class="mb-5 mt-5">Firebase Login</h1>
+
+  <div id="sing-out-form" class="mx-auto" style="max-width: 900px;">
+    <button id="sign-out-button" type="submit" class="btn btn-outline-danger btn-block mb-4">Log Out</button>
+    <img src="./img/img.png" alt="">
+  </div>
+
+  <!-- Logo-->
+  <div class="tab-content" id="sign-in-form">
+    <div class="mx-auto" style="max-width: 900px;">
+      <form>
+
+        <!-- Log in Email input -->
+        <div class="form-outline mb-4">
+          <input type="email" id="loginName" class="form-control" />
+          <label class="form-label" for="loginName">Email</label>
+        </div>
+
+        <!--  Log in  Password input -->
+        <div class="form-outline mb-4">
+          <input type="password" id="loginPassword" class="form-control" />
+          <label class="form-label" for="loginPassword">Password</label>
+        </div>
+
+
+        <!-- Submit button -->
+        <button id="sign-in-button" type="submit" class="btn btn-outline-success btn-block mb-4">Sign in</button>
+
+        <!-- Register buttons -->
+        <div class="text-center">
+          <p>Not a member? <a href="#!">Register</a></p>
+        </div>
+      </form>
+
+      <!-- Register-->
+      <div class="mx-auto" style="max-width: 900px;">
+        <form>
+
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="registerEmail" class="form-control" />
+            <label class="form-label" for="registerEmail">Email</label>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+            <input type="password" id="registerPassword" class="form-control" />
+            <label class="form-label" for="registerPassword">Password</label>
+          </div>
+
+          <!-- Register Submit button -->
+          <button id="register-button" type="submit" class="btn btn-outline-primary btn-block mb-3">Register</button>
+        </form>
+
+      </div>
+    </div>
+
+    <script type="module" src="./firebase.js"></script>
+    <script type="module" src="./main.js"></script>
+
+</body>
+
+</html>
